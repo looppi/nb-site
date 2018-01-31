@@ -30,9 +30,10 @@ export default class IndexPage extends React.Component {
         />
         <div className="container">
             <div className="content">
-                <section className="hero">
-                    <div className="hero-body" style={{ height: "800px", backgroundImage: `url(${page.frontmatter.background})`}}>
-                        <div className="nb-logo">
+                <section className="hero is-large">
+                    <div className="hero-body" style={{ backgroundImage: `url(${page.frontmatter.background})`, backgroundSize: "cover"}}>
+                        <div className="container"></div>
+                        <div className="nb-logo image is-2by1">
                             <img
                                 style={{ borderRadius: '5px' }}
                                 src={page.frontmatter.logo}
