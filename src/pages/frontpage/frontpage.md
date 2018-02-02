@@ -11,8 +11,8 @@ description: >-
   Northbound auttaa yritystäsi kohdentamaan myynnin laadukkaampiin prospekteihin, ilman prospektoinnin vaivaa.
   Lopputuloksena käteesi jää enemmän potentiaalisia tapaamisia ja kauppoja.
   Ratkaisut tuotetaan aina asiakaskohtaisesti ja kustannukset ovat tulospohjaiset.
-foofaa_title: fuufa juttujeejoo
-foofaa:
+pallurat_title: Työskentele tehokkaammin ja saavuta entistä parempia tuloksia!
+pallurat:
     - image:
       alt: Valmiit listat juuri sinulle valituista potentiaalisista asiakkaista suoraan CRM:ään - säännöllisesti ja sovittuna ajankohtana
       img: /img/webbikuvake5.png

@@ -19,9 +19,7 @@ export default class IndexPage extends React.Component {
 
   render() {
     const {data} = this.props;
-//    console.log(data);
     const page = data.markdownRemark;
-//    console.log(page);
 
     const points = page.frontmatter.tldr.map(({ point }) => (
       <div key={point} className="">
@@ -29,19 +27,17 @@ export default class IndexPage extends React.Component {
           {point}
         </div>
       </div>));
-    console.log(points);
 
-    console.log(page.frontmatter.foofaa);
-    const pallurat = page.frontmatter.foofaa.map(({ img, alt }) => (
+    const pallurat = page.frontmatter.pallurat.map(({ img, alt }) => (
       <div key={alt} className="column is-4">
-        <div className="has-text-centered">{alt}</div>
+        <div className="has-text-centered pallura-text">{alt}</div>
         <div className="columns is-centered is-mobile">
           <div className="column is-one-third is-empty"></div>
-          <div className="column is-one-third">
+          <div className="column is-one-third pallura-image">
             <figure className="image is-128x128">
               <img
                 src={img}
-                aria-label={alt}
+                aria-hidden="true"
               />
             </figure>
           </div>
@@ -49,16 +45,15 @@ export default class IndexPage extends React.Component {
         </div>
       </div>
     ));
-    console.log(page.frontmatter);
-    console.log(page.frontmatter.people);
+
     const naamat = page.frontmatter.people.map(({name, title, responsibility, email, phone, image}) => (
       <div key={email} className="column is-half person-block">
         <div className="columns is-centered is-mobile">
           <div className="column">
             <div className="columns is-centered is-mobile">
               <div className="column is-one-third is-empty"></div>
-              <div className="column is-one-third">
-                <figure className="image is-128x128 person-picture">
+              <div className="column is-one-third person-image">
+                <figure className="image is-128x128">
                   <img
                     src={image.image}
                     aria-label={image.alt}
@@ -69,7 +64,7 @@ export default class IndexPage extends React.Component {
             </div>
             <div className="columns is-centered is-mobile">
               <div className="column is-one-third is-empty"></div>
-              <div className="person column is-one-third">
+              <div className="person-info column is-one-third">
                 <h4 className="title is-4">{name}</h4>
                 <p>{title}</p>
                 <p>{responsibility}</p>
@@ -121,11 +116,14 @@ export default class IndexPage extends React.Component {
           <div className="column is-8 is-offset-2 has-text-justified">{page.frontmatter.description}</div>
         </section>
         <section className="container">
-         <div className="columns is-multiline">
+          <div className="pallurat-header">
+            <h3 className="title is-h3 has-text-centered">{page.frontmatter.pallurat_title}</h3>
+          </div>
+          <div className="columns is-multiline pallurat-container">
            {pallurat}
          </div>
         </section>
-        <section className="container">
+        <section className="container people-container">
           <div className="columns is-multiline">
             {naamat}
           </div>
@@ -146,8 +144,8 @@ query IndexQuery {markdownRemark(frontmatter: {templateKey: {eq:"front-page"}}) 
     tldr {
       point
     }
-    foofaa_title
-    foofaa {
+    pallurat_title
+    pallurat {
       img
       alt
     }
