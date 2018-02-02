@@ -34,33 +34,49 @@ export default class IndexPage extends React.Component {
     console.log(page.frontmatter.foofaa);
     const pallurat = page.frontmatter.foofaa.map(({ img, alt }) => (
       <div key={alt} className="column is-4">
-        <div>{alt}</div>
-        <figure className="image is-128x128">
-          <img
-            src={img}
-            aria-label={alt}
-          />
-        </figure>
+        <div className="has-text-centered">{alt}</div>
+        <div className="columns is-centered is-mobile">
+          <div className="column is-one-third is-empty"></div>
+          <div className="column is-one-third">
+            <figure className="image is-128x128">
+              <img
+                src={img}
+                aria-label={alt}
+              />
+            </figure>
+          </div>
+          <div className="column is-one-third is-empty"></div>
+        </div>
       </div>
     ));
     console.log(page.frontmatter);
     console.log(page.frontmatter.people);
     const naamat = page.frontmatter.people.map(({name, title, responsibility, email, phone, image}) => (
       <div key={email} className="column is-half person-block">
-        <div className="columns is-centered">
-          <div className="column is-half">
-            <figure className="image is-128x128 person-picture">
-              <img
-                src={image.image}
-                aria-label={image.alt}
-              />
-            </figure>
-            <div className="person">
-              <h4 className="title is-4">{name}</h4>
-              <p>{title}</p>
-              <p>{responsibility}</p>
-              <p>{email}</p>
-              <p>{phone}</p>
+        <div className="columns is-centered is-mobile">
+          <div className="column">
+            <div className="columns is-centered is-mobile">
+              <div className="column is-one-third is-empty"></div>
+              <div className="column is-one-third">
+                <figure className="image is-128x128 person-picture">
+                  <img
+                    src={image.image}
+                    aria-label={image.alt}
+                  />
+                </figure>
+              </div>
+              <div className="column is-one-third is-empty"></div>
+            </div>
+            <div className="columns is-centered is-mobile">
+              <div className="column is-one-third is-empty"></div>
+              <div className="person column is-one-third">
+                <h4 className="title is-4">{name}</h4>
+                <p>{title}</p>
+                <p>{responsibility}</p>
+                <p>{email}</p>
+                <p>{phone}</p>
+              </div>
+              <div className="column is-one-third is-empty"></div>
             </div>
           </div>
         </div>
@@ -89,7 +105,7 @@ export default class IndexPage extends React.Component {
             <div className="read-more container has-text-centered">
               <Link to="#snap-to">
                 <button className="button is-centered is-primary">
-                  READ MORE
+                  Lue lisää
                 </button>
               </Link>
 

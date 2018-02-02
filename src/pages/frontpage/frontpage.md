@@ -15,22 +15,22 @@ foofaa_title: fuufa juttujeejoo
 foofaa:
     - image:
       alt: Valmiit listat juuri sinulle valituista potentiaalisista asiakkaista suoraan CRM:ään - säännöllisesti ja sovittuna ajankohtana
-      img: /img/webbikuvake1.png
+      img: /img/webbikuvake5.png
     - image:
       alt: Tunnista tärkeimmät asiakassegmentit ja ostajaprofiilit
-      img: /img/webbikuvake2.png
+      img: /img/webbikuvake3.png
     - image:
       alt: “Anna myyjille mahdollisuus keskittyä enemmän oleelliseen - kaupan tekemiseen”
-      img: /img/webbikuvake3.png
+      img: /img/webbipainiketesti-vihrea.png
     - image:
       alt: Tulospohjainen laskutusmalli takaa molemminpuolisen halun kehittää palvelua
       img: /img/webbikuvake4.png
     - image:
       alt: Tavoita oikea päättäjä, oikeaan aikaan
-      img: /img/webbikuvake5.png
+      img: /img/webbikuvake1.png
     - image:
       alt: Hyödynnä nykyasiakkaiden täysi potentiaali.
-      img: /img/webbipainiketesti-vihrea.png
+      img: /img/webbikuvake2.png
 people:
   - name: Ilja Aalto
     title: CEO
