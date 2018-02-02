@@ -30,7 +30,6 @@ export default class IndexPage extends React.Component {
 
     const pallurat = page.frontmatter.pallurat.map(({ img, alt }) => (
       <div key={alt} className="column is-4">
-        <div className="has-text-centered pallura-text">{alt}</div>
         <div className="columns is-centered is-mobile">
           <div className="column is-one-third is-empty"></div>
           <div className="column is-one-third pallura-image">
@@ -43,6 +42,7 @@ export default class IndexPage extends React.Component {
           </div>
           <div className="column is-one-third is-empty"></div>
         </div>
+        <div className="has-text-centered pallura-text">{alt}</div>
       </div>
     ));
 
