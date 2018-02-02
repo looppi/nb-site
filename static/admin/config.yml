@@ -54,3 +54,7 @@ collections:
           - {label: Description, name: description, widget: string}
           - {label: Logo, name: logo, widget: image}
           - {label: Background, name: background, widget: image}
+          - {label: tldr, name: tldr, widget: list, fields: [{label: point, name: point, widget: string}]}
+          - {label: Foofaa Title, name: foofaa_title, widget: String}
+          - {label: foofaa, name: foofaa, widget: list, fields:[{label: Image, name: image, widget: object, fields:[{label: Img, name: img, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: People, name: people, widget: list, fields: [{label: Name, name: name, widget: string},{label: title, name: title, widget: string},{label: responsibility, name: responsibility, widget: string},{label: phone, name: phone, widget: string},{label: email, name: email, widget: string}, {label: Author, name: author, widget: string},{label: Image, name: image, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}

@@ -8,7 +8,6 @@ import './all.sass';
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Northbound" />
-    <Navbar />
     <div>{children()}</div>
   </div>
 );
