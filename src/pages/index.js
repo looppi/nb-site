@@ -28,21 +28,21 @@ export default class IndexPage extends React.Component {
         </div>
       </div>));
 
-    const pallurat = page.frontmatter.pallurat.map(({ img, alt }) => (
-      <div key={alt} className="column is-4">
+    const pallurat = page.frontmatter.pallurat.map(({ pallura }) => (
+      <div key={pallura.alt} className="column is-4">
         <div className="columns is-centered is-mobile">
           <div className="column is-one-third is-empty"></div>
           <div className="column is-one-third pallura-image">
             <figure className="image is-128x128">
               <img
-                src={img}
+                src={pallura.image}
                 aria-hidden="true"
               />
             </figure>
           </div>
           <div className="column is-one-third is-empty"></div>
         </div>
-        <div className="has-text-centered pallura-text">{alt}</div>
+        <div className="has-text-centered pallura-text">{pallura.alt}</div>
       </div>
     ));
 
@@ -146,8 +146,10 @@ query IndexQuery {markdownRemark(frontmatter: {templateKey: {eq:"front-page"}}) 
     }
     pallurat_title
     pallurat {
-      img
-      alt
+      pallura {
+        image
+        alt
+      }
     }
     people {
       name

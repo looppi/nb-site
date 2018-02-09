@@ -13,24 +13,24 @@ description: >-
   Ratkaisut tuotetaan aina asiakaskohtaisesti ja kustannukset ovat tulospohjaiset.
 pallurat_title: Työskentele tehokkaammin ja saavuta entistä parempia tuloksia!
 pallurat:
-    - image:
-      alt: Valmiit listat juuri sinulle valituista potentiaalisista asiakkaista suoraan CRM:ään - säännöllisesti ja sovittuna ajankohtana
-      img: /img/webbikuvake5.png
-    - image:
-      alt: Tunnista tärkeimmät asiakassegmentit ja ostajaprofiilit
-      img: /img/webbikuvake3.png
-    - image:
-      alt: “Anna myyjille mahdollisuus keskittyä enemmän oleelliseen - kaupan tekemiseen”
-      img: /img/webbipainiketesti-vihrea.png
-    - image:
-      alt: Tulospohjainen laskutusmalli takaa molemminpuolisen halun kehittää palvelua
-      img: /img/webbikuvake4.png
-    - image:
-      alt: Tavoita oikea päättäjä, oikeaan aikaan
-      img: /img/webbikuvake1.png
-    - image:
-      alt: Hyödynnä nykyasiakkaiden täysi potentiaali.
-      img: /img/webbikuvake2.png
+    - pallura:
+        alt: Valmiit listat juuri sinulle valituista potentiaalisista asiakkaista suoraan CRM:ään - säännöllisesti ja sovittuna ajankohtana
+        image: /img/webbikuvake5.png
+    - pallura:
+        alt: Tunnista tärkeimmät asiakassegmentit ja ostajaprofiilit
+        image: /img/webbikuvake3.png
+    - pallura:
+        alt: “Anna myyjille mahdollisuus keskittyä enemmän oleelliseen - kaupan tekemiseen”
+        image: /img/webbipainiketesti-vihrea.png
+    - pallura:
+        alt: Tulospohjainen laskutusmalli takaa molemminpuolisen halun kehittää palvelua
+        image: /img/webbikuvake4.png
+    - pallura:
+        alt: Tavoita oikea päättäjä, oikeaan aikaan
+        image: /img/webbikuvake1.png
+    - pallura:
+        alt: Hyödynnä nykyasiakkaiden täysi potentiaali.
+        image: /img/webbikuvake2.png
 people:
   - name: Ilja Aalto
     title: CEO
