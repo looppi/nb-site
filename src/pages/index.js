@@ -24,7 +24,9 @@ export default class IndexPage extends React.Component {
     const points = page.frontmatter.tldr.map(({ point }) => (
       <div key={point} className="">
         <div className="has-text-justified">
-          {point}
+          <p className="point">
+            {point}
+          </p>
         </div>
       </div>));
 
@@ -46,6 +48,7 @@ export default class IndexPage extends React.Component {
       </div>
     ));
 
+    console.log(page.frontmatter.people);
     const naamat = page.frontmatter.people.map(({name, title, responsibility, email, phone, image}) => (
       <div key={email} className="column is-half person-block">
         <div className="columns is-centered is-mobile">
@@ -87,12 +90,18 @@ export default class IndexPage extends React.Component {
             onLoad={() => this.handleScriptLoad()}/>
           <div className="hero-body">
             <div className="container">
-              <div className="nb-logo image">
-                <img
-                  style={{maxHeight: "150px"}}
-                  src={page.frontmatter.logo}
-                  aria-label="Northbound logo"
-                />
+              <div className="columns">
+                <div className="column is-one-third is-empty is-mobile"></div>
+                <div className="column is-one-third is-mobile">
+                  <div className="nb-logo image">
+                    <img
+                      style={{maxHeight: "150px", maxWidth: "600px"}}
+                      src={page.frontmatter.logo}
+                      aria-label="Northbound logo"
+                    />
+                  </div>
+                </div>
+                <div className="column is-one-third is-empty is-mobile"></div>
               </div>
             </div>
           </div>
@@ -108,12 +117,12 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
         <section id="snap-to" className="container has-addons-centered">
-          <div className="column is-8 is-offset-2">
+          <div className="column is-10 is-offset-1">
             {points}
           </div>
         </section>
         <section className="container">
-          <div className="column is-8 is-offset-2 has-text-justified">{page.frontmatter.description}</div>
+          <div className="column is-10 is-offset-1 has-text-justified">{page.frontmatter.description}</div>
         </section>
         <section className="container">
           <div className="pallurat-header">
