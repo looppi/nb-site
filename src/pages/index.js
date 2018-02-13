@@ -132,11 +132,11 @@ export default class IndexPage extends React.Component {
            {pallurat}
          </div>
         </section>
-        <section className="container people-container">
+        <footer className="footer people-container">
           <div className="columns is-multiline">
             {naamat}
           </div>
-        </section>
+        </footer>
       </div>
     );
   }
