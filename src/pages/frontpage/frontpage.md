@@ -35,7 +35,7 @@ people:
   - name: Ilja Aalto
     title: CEO
     responsibility: Myynti
-    phone: 0443131101
+    phone: "0443131101"
     email: ilja.aalto@northbound.fi
     image:
       image: /img/webbikuvake1.png
@@ -43,7 +43,7 @@ people:
   - name: Jere Katellus
     title: COO
     responsibility: Henkilöstö
-    phone: 0504353764
+    phone: "0504353764"
     email: jere.kattelus@northbound.fi
     image:
       image: /img/webbikuvake1.png

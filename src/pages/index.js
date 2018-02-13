@@ -72,7 +72,7 @@ export default class IndexPage extends React.Component {
                 <p>{title}</p>
                 <p>{responsibility}</p>
                 <p>{email}</p>
-                <p>{phone}</p>
+                <p>{'0' + phone}</p>
               </div>
               <div className="column is-one-third is-empty"></div>
             </div>
