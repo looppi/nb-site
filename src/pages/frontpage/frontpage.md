@@ -1,14 +1,22 @@
 ---
 templateKey: front-page
+path: wut
 title: Huuhaa
 logo: /img/northbound-white.png
 background: /img/bg.jpg
 tldr:
-  - point: B2B-myyjän työajasta ainoastaan 20-30% menee oleelliseen
-  - point: Suomalaisten yritysten tulos on keskimäärin 3%
-  - point: >-
-      Yksi helpoimpia ja toimivimpia keinoja parantaa tulosta on myynnin
-      tehostaminen
+  - point:
+      alt: >-
+        B2B-myyjän työajasta ainoastaan 20-30% menee oleelliseen
+      image: /img/webbikuvake7.png
+  - point:
+      alt: >-
+        Suomalaisten yritysten tulos on keskimäärin 3%
+      image: /img/webbikuvake6.png
+  - point:
+      alt: >-
+        Yksi helpoimpia ja toimivimpia keinoja parantaa tulosta on myynnin tehostaminen
+      image: /img/webbikuvake5.png
 description: >-
   Northbound auttaa yritystäsi kohdentamaan myynnin laadukkaampiin
   prospekteihin, ilman prospektoinnin vaivaa. Lopputuloksena käteesi jää enemmän

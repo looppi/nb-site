@@ -22,13 +22,22 @@ export default class IndexPage extends React.Component {
     const page = data.markdownRemark;
 
     const points = page.frontmatter.tldr.map(({ point }) => (
-      <div key={point} className="">
-        <div className="has-text-justified">
-          <p className="point">
-            {point}
-          </p>
+      <div key={point.alt} className="column is-4">
+        <div className="columns is-centered is-mobile">
+          <div className="column is-one-third is-empty"></div>
+          <div className="column is-one-third pallura-image">
+            <figure className="image is-128x128">
+              <img
+                src={point.image}
+                aria-hidden="true"
+              />
+            </figure>
+          </div>
+          <div className="column is-one-third is-empty"></div>
         </div>
-      </div>));
+        <div className="has-text-centered pallura-text">{point.alt}</div>
+      </div>
+      ));
 
     const pallurat = page.frontmatter.pallurat.map(({ pallura }) => (
       <div key={pallura.alt} className="column is-4">
@@ -72,7 +81,7 @@ export default class IndexPage extends React.Component {
                 <p>{title}</p>
                 <p>{responsibility}</p>
                 <p>{email}</p>
-                <p>{'0' + phone}</p>
+                <p>{phone}</p>
               </div>
               <div className="column is-one-third is-empty"></div>
             </div>
@@ -116,12 +125,15 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        <section id="snap-to" className="container has-addons-centered">
-          <div className="column is-10 is-offset-1">
+        <section id="snap-to" className="container has-addons-centered tldr-container">
+          <h3 className="title is-h3 has-text-centered">Tiesitkö, että...</h3>
+          <div className="columns is-multiline pallurat-container">
             {points}
           </div>
         </section>
-        <section className="container">
+        <section className="container description-container">
+          <h3 className="title is-h3 has-text-centered pad-top">Myynnin tehostamisen paras kumppani:</h3>
+          <h3 className="title is-h3 has-text-centered">Northbound</h3>
           <div className="column is-10 is-offset-1 has-text-justified">{page.frontmatter.description}</div>
         </section>
         <section className="container">
@@ -137,6 +149,20 @@ export default class IndexPage extends React.Component {
             {naamat}
           </div>
         </footer>
+        <section className="hero some-box">
+          <div className="hero-body">
+            <div className="container">
+              <div className="columns is-vcentered">
+                <div className="column is-half is-centered some-icon-container">
+                  <a href="#" aria-label="link to facebook"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+                <div className="column is-half is-centered some-icon-container">
+                  <a href="#" aria-label="link to instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
@@ -151,7 +177,10 @@ query IndexQuery {markdownRemark(frontmatter: {templateKey: {eq:"front-page"}}) 
     background
     description
     tldr {
-      point
+      point {
+        image
+        alt
+      }
     }
     pallurat_title
     pallurat {
