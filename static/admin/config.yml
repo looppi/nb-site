@@ -53,7 +53,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Logo, name: logo, widget: image}
           - {label: Background, name: background, widget: image}
-          - {label: tldr, name: tldr, widget: list, fields: {label: Point, name: point, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: tldr, name: tldr, widget: list, fields: [{label: Point, name: point, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
           - {label: Description, name: description, widget: string}
           - {label: Pallurat Title, name: pallurat_title, widget: string}
           - {label: Pallurat, name: pallurat, widget: list, fields: [{label: Pallura, name: pallura, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
