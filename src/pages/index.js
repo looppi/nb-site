@@ -154,10 +154,10 @@ export default class IndexPage extends React.Component {
             <div className="container">
               <div className="columns is-vcentered">
                 <div className="column is-half is-centered some-icon-container">
-                  <a href="#" aria-label="link to facebook"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a className="some-icon" href="https://www.facebook.com/northboundoy/" aria-label="link to facebook"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
                 </div>
                 <div className="column is-half is-centered some-icon-container">
-                  <a href="#" aria-label="link to instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a className="some-icon" href="https://www.instagram.com/northbound.fi/" aria-label="link to instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
