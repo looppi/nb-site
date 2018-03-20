@@ -1,25 +1,23 @@
 ---
 templateKey: front-page
-path: wut
 title: Huuhaa
 logo: /img/northbound-white.png
 background: /img/bg.jpg
 tldr:
   - point:
-      alt: >-
-        B2B-myyjän työajasta ainoastaan 20-30% menee oleelliseen
+      alt: B2B-myyjän työajasta ainoastaan 20-30% menee oleelliseen
       image: /img/webbikuvake7.png
   - point:
-      alt: >-
-        Suomalaisten yritysten tulos on keskimäärin 3%
+      alt: Suomalaisten yritysten keskimääräinen tulos on alle 5%
       image: /img/webbikuvake6.png
   - point:
       alt: >-
-        Yksi helpoimpia ja toimivimpia keinoja parantaa tulosta on myynnin tehostaminen
+        Yksi helpoimpia ja toimivimpia keinoja parantaa tulosta on myynnin
+        tehostaminen
       image: /img/webbikuvake5.png
 description: >-
-  Northbound auttaa yritystäsi kohdentamaan myynnin laadukkaampiin
-  prospekteihin, ilman prospektoinnin vaivaa. Lopputuloksena käteesi jää enemmän
+  Northbound auttaa yritystäsi kohdentamaan myynnin laadukkaampiin prospekteihin
+  – ilman prospektoinnin vaivaa. Lopputuloksena käteesi jää enemmän
   potentiaalisia tapaamisia ja kauppoja. Ratkaisut tuotetaan aina
   asiakaskohtaisesti ja kustannukset ovat tulospohjaiset.
 pallurat_title: Työskentele tehokkaammin ja saavuta entistä parempia tuloksia!
@@ -27,15 +25,15 @@ pallurat:
   - pallura:
       alt: >-
         Valmiit listat juuri sinulle valituista potentiaalisista asiakkaista
-        suoraan CRM:ään - säännöllisesti ja sovittuna ajankohtana
+        suoraan CRM:ään – säännöllisesti ja sovittuna ajankohtana
       image: /img/webbikuvake5.png
   - pallura:
       alt: >-
-        Anna myyjille mahdollisuus keskittyä enemmän oleelliseen - kaupan
+        Anna myyjille mahdollisuus keskittyä enemmän oleelliseen – kaupan
         tekemiseen
       image: /img/webbikuvake3.png
   - pallura:
-      alt: 'Tavoita oikea päättäjä, oikeaan aikaan'
+      alt: Tavoita oikea päättäjä oikeaan aikaan
       image: /img/webbipainiketesti-vihrea.png
   - pallura:
       alt: Tunnista tärkeimmät asiakassegmentit ja ostajaprofiilit
@@ -55,7 +53,7 @@ people:
       image: /img/webbikuvake1.png
     name: Ilja Aalto
     phone: 044 3131101
-    responsibility: Myynti
+    responsibility: Myynti & talous
     title: CEO
     linkedin: https://www.linkedin.com/in/ilja-aalto/
   - email: jere.kattelus@northbound.fi
@@ -64,7 +62,7 @@ people:
       image: /img/webbikuvake1.png
     name: Jere Kattelus
     phone: 050 4353764
-    responsibility: Henkilöstö
+    responsibility: Henkilöstö & tuotekehitys
     title: COO
     linkedin:  https://www.linkedin.com/in/jere-kattelus/
 ---
