@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -57,35 +57,25 @@ export default class IndexPage extends React.Component {
       </div>
     ));
 
-    console.log(page.frontmatter.people);
-    const naamat = page.frontmatter.people.map(({name, title, responsibility, email, phone, image}) => (
-      <div key={email} className="column is-half person-block">
-        <div className="columns is-centered is-mobile">
-          <div className="column">
-            <div className="columns is-centered is-mobile">
-              <div className="column is-one-third is-empty"></div>
-              <div className="column is-one-third person-image">
-                <figure className="image is-128x128">
-                  <img
-                    src={image.image}
-                    aria-label={image.alt}
-                  />
-                </figure>
-              </div>
-              <div className="column is-one-third is-empty"></div>
-            </div>
-            <div className="columns is-centered is-mobile">
-              <div className="column is-one-third is-empty"></div>
-              <div className="person-info column is-one-third">
-                <h4 className="title is-4">{name}</h4>
-                <p>{title}</p>
-                <p>{responsibility}</p>
-                <p>{email}</p>
-                <p>{phone}</p>
-              </div>
-              <div className="column is-one-third is-empty"></div>
-            </div>
+    const naamat = page.frontmatter.people.map(({name, title, responsibility, email, phone, image, linkedin}) => (
+      <div key={email} className="person-block column is-half">
+        <div className="person-image-block">
+          <div className="person-image">
+            <figure className="image is-128x128">
+              <img
+                src={image.image}
+                aria-label={image.alt}
+              />
+            </figure>
           </div>
+        </div>
+        <div className="person-info">
+          <h4 className="title is-4">{name}</h4>
+          <p>{title}</p>
+          <p>{responsibility}</p>
+          <p>{email}</p>
+          <p>{phone}</p>
+          <p><a href={linkedin} aria-label="link to linkedin"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a></p>
         </div>
       </div>
     ));
@@ -116,16 +106,16 @@ export default class IndexPage extends React.Component {
           </div>
           <div className="hero-foot">
             <div className="read-more container has-text-centered">
-              <Link to="#snap-to">
-                <button className="button is-centered is-primary">
+              <AnchorLink href="#read-more">
+                <button className="button is-centered is-primary" href="#read-more">
                   Lue lisää
                 </button>
-              </Link>
+              </AnchorLink>
 
             </div>
           </div>
         </section>
-        <section id="snap-to" className="container has-addons-centered tldr-container">
+        <section id="read-more" className="container has-addons-centered tldr-container">
           <h3 className="title is-h3 has-text-centered">Tiesitkö, että...</h3>
           <div className="columns is-multiline pallurat-container">
             {points}
@@ -134,7 +124,7 @@ export default class IndexPage extends React.Component {
         <section className="container description-container">
           <h3 className="title is-h3 has-text-centered pad-top">Myynnin tehostamisen paras kumppani:</h3>
           <h3 className="title is-h3 has-text-centered">Northbound</h3>
-          <div className="column is-10 is-offset-1 has-text-justified">{page.frontmatter.description}</div>
+          <div className="column is-10 is-offset-1 has-text-centered">{page.frontmatter.description}</div>
         </section>
         <section className="container">
           <div className="pallurat-header">
@@ -145,18 +135,18 @@ export default class IndexPage extends React.Component {
          </div>
         </section>
         <footer className="footer people-container">
-          <div className="columns is-multiline">
-            {naamat}
-          </div>
+          <section className="container">
+            <div className="columns is-multiline">
+              {naamat}
+            </div>
+          </section>
         </footer>
         <section className="hero some-box">
           <div className="hero-body">
             <div className="container">
-              <div className="columns is-vcentered">
-                <div className="column is-half is-centered some-icon-container">
+              <div className="is-vcentered">
+                <div className="some-icon-container">
                   <a className="some-icon" href="https://www.facebook.com/northboundoy/" aria-label="link to facebook"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
-                </div>
-                <div className="column is-half is-centered some-icon-container">
                   <a className="some-icon" href="https://www.instagram.com/northbound.fi/" aria-label="link to instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a>
                 </div>
               </div>
@@ -195,6 +185,7 @@ query IndexQuery {markdownRemark(frontmatter: {templateKey: {eq:"front-page"}}) 
       responsibility
       email
       phone
+      linkedin
       image {
         image
         alt

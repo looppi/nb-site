@@ -57,6 +57,7 @@ people:
     phone: 044 3131101
     responsibility: Myynti
     title: CEO
+    linkedin: https://www.linkedin.com/in/ilja-aalto/
   - email: jere.kattelus@northbound.fi
     image:
       alt: Jere Kattelus
@@ -65,5 +66,6 @@ people:
     phone: 050 4353764
     responsibility: Henkilöstö
     title: COO
+    linkedin:  https://www.linkedin.com/in/jere-kattelus/
 ---
 
