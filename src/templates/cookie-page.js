@@ -2,7 +2,7 @@ import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const CookiePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -24,7 +24,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 export default ({ data }) => {
   const { markdownRemark: post } = data;
 
-  return (<AboutPageTemplate
+  return (<CookiePageTemplate
     contentComponent={HTMLContent}
     title={post.frontmatter.title}
     content={post.html}

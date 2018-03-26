@@ -3651,6 +3651,12 @@ gatsby-module-loader@^1.0.9:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
+gatsby-plugin-google-tagmanager@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-1.0.16.tgz#7c3a5b9d2a41d605ac567b298b5e4128fef3f87b"
+  dependencies:
+    babel-runtime "^6.26.0"
+
 gatsby-plugin-netlify-cms@^1.0.2:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-1.0.4.tgz#ab2ab5e73dfe029adfd31705df63aa55f838e394"
@@ -5355,6 +5361,10 @@ jpeg-js@^0.2.0:
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.1.tgz#e02813181cd53002888e918935467acb2910e596"
+
+js-cookie@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.0.tgz#1b2c279a6eece380a12168b92485265b35b1effb"
 
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
@@ -7953,6 +7963,13 @@ react-autowhatever@^10.1.0:
     react-themeable "^1.1.0"
     section-iterator "^2.0.0"
 
+react-cookie-consent@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-1.0.4.tgz#732c6b8c2a7903b118f14ebd6dba2777855f3ef4"
+  dependencies:
+    js-cookie "^2.2.0"
+    react "^15.5.4"
+
 react-datetime@^2.11.0:
   version "2.11.1"
   resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-2.11.1.tgz#11d15081dd7d6729284e21c1b8ea7b975e3bdc7e"
@@ -8211,7 +8228,7 @@ react-waypoint@^7.1.0:
     consolidated-events "^1.1.0"
     prop-types "^15.0.0"
 
-react@^15.6.0:
+react@^15.5.4, react@^15.6.0:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
   dependencies:

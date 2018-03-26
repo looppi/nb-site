@@ -2,6 +2,8 @@ import React from "react";
 import Script from "react-load-script";
 import graphql from "graphql";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import CookieConsent from "react-cookie-consent";
+import Link from 'gatsby-link';
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -153,6 +155,17 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
+        <CookieConsent
+          location="bottom"
+          buttonText="Ok"
+          cookieName="nb-cookie-accept"
+          style={{ background: "#124044", color: "#FFF" }}
+          >
+          Tämä verkkosivu käyttää evästeitä.{" "}
+          <Link to="/cookie">
+            Lue lisää
+          </Link>
+        </CookieConsent>
       </div>
     );
   }
