@@ -16,12 +16,14 @@ tldr:
         tehostaminen
       image: /img/webbikuvake8.png
 description: >-
-  Northbound auttaa yritystäsi kohdentamaan myynnin laadukkaampiin prospekteihin
-  – ilman prospektoinnin vaivaa. Ulkoistamme koko myyntiprosessin alkupään
-  avaimet käteen -palveluksi, jolloin lopputuloksena käteesi jää enemmän
-  potentiaalisia tapaamisia ja kauppoja. Ratkaisut tuotetaan aina
-  asiakaskohtaisesti, jolloin valittu palvelu tukee parhaiten juuri teidän
-  yritystänne. 
+  Löytyykö teidän organisaatiosta tekosyitä miksi kauppaa ei tule? Kuluuko
+  oikeiden asiakkaiden löytämiseen liikaa aikaa? Motivoituvatko myyjänne
+  oikeasti kaikista työvaiheistaan?  Northbound tarjoaa koko myyntiprosessin
+  alkupään avaimet käteen -palveluna. Ratkaisut tuotetaan aina asiakassegmentit
+  ja -profiilit huomioiden. Pystymme tarjoamaan myyjillesi kalenterin täydeltä
+  tapaamisia ja poistamaan tehtävälistalta koko prospektointivaiheen sekä
+  kylmien asiakkaiden kontaktoinnin.  Laita viestiä ja katsotaan, miten myynti
+  voitaisiin tehdä nykyistä tuloksekkaammin!
 pallurat_title: Työskentele tehokkaammin ja saavuta entistä parempia tuloksia!
 pallurat:
   - pallura:
