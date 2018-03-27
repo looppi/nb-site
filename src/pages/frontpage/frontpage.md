@@ -17,7 +17,8 @@ tldr:
       image: /img/webbikuvake8.png
 description: >-
   Northbound auttaa yritystäsi kohdentamaan myynnin laadukkaampiin prospekteihin
-  – ilman prospektoinnin vaivaa. Lopputuloksena käteesi jää enemmän
+  – ilman prospektoinnin vaivaa. Ulkoistamme koko myyntiprosessin alkupään
+  avaimet käteen -palveluksi, jolloin lopputuloksena käteesi jää enemmän
   potentiaalisia tapaamisia ja kauppoja. Ratkaisut tuotetaan aina
   asiakaskohtaisesti, jolloin valittu palvelu tukee parhaiten juuri teidän
   yritystänne. 
