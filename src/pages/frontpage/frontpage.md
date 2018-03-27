@@ -14,12 +14,14 @@ tldr:
       alt: >-
         Yksi helpoimpia ja toimivimpia keinoja parantaa tulosta on myynnin
         tehostaminen
-      image: /img/webbikuvake5.png
+      image: /img/webbikuvake8.png
 description: >-
   Northbound auttaa yritystäsi kohdentamaan myynnin laadukkaampiin prospekteihin
-  – ilman prospektoinnin vaivaa. Lopputuloksena käteesi jää enemmän
+  – ilman prospektoinnin vaivaa. Ulkoistamme koko myyntiprosessin alkupään
+  avaimet käteen -palveluksi, jolloin lopputuloksena käteesi jää enemmän
   potentiaalisia tapaamisia ja kauppoja. Ratkaisut tuotetaan aina
-  asiakaskohtaisesti ja kustannukset ovat tulospohjaiset.
+  asiakaskohtaisesti, jolloin valittu palvelu tukee parhaiten juuri teidän
+  yritystänne. 
 pallurat_title: Työskentele tehokkaammin ja saavuta entistä parempia tuloksia!
 pallurat:
   - pallura:
@@ -39,9 +41,7 @@ pallurat:
       alt: Tunnista tärkeimmät asiakassegmentit ja ostajaprofiilit
       image: /img/webbikuvake4.png
   - pallura:
-      alt: >-
-        Tulospohjainen laskutusmalli takaa molemminpuolisen halun kehittää
-        palvelua
+      alt: Myynnin kehittymistä on helppo seurata säännöllisistä raporteistamme
       image: /img/webbikuvake1.png
   - pallura:
       alt: Hyödynnä nykyasiakkaiden täysi potentiaali.
@@ -51,19 +51,19 @@ people:
     image:
       alt: Ilja Aalto
       image: /img/webbikuvake1.png
+    linkedin: 'https://www.linkedin.com/in/ilja-aalto/'
     name: Ilja Aalto
     phone: 044 3131101
     responsibility: Myynti & talous
     title: CEO
-    linkedin: https://www.linkedin.com/in/ilja-aalto/
   - email: jere.kattelus@northbound.fi
     image:
       alt: Jere Kattelus
       image: /img/webbikuvake1.png
+    linkedin: 'https://www.linkedin.com/in/jere-kattelus/'
     name: Jere Kattelus
     phone: 050 4353764
     responsibility: Henkilöstö & tuotekehitys
     title: COO
-    linkedin:  https://www.linkedin.com/in/jere-kattelus/
 ---
 
