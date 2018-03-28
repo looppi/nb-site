@@ -85,7 +85,7 @@ export default class IndexPage extends React.Component {
     const descriptions = page.frontmatter.d_rows.map((row) =>(
       <p key={row}>{row}</p>
     ));
-
+    const descriptions = page.frontmatter.description;
     return (
       <div>
         <section className="section hero is-fullheight"
@@ -183,7 +183,6 @@ query IndexQuery {markdownRemark(frontmatter: {templateKey: {eq:"front-page"}}) 
     logo
     background
     description
-    d_rows
     tldr {
       point {
         image
