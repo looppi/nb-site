@@ -82,9 +82,6 @@ export default class IndexPage extends React.Component {
       </div>
     ));
 
-    const descriptions = page.frontmatter.d_rows.map((row) =>(
-      <p key={row}>{row}</p>
-    ));
     const descriptions = page.frontmatter.description;
     return (
       <div>
