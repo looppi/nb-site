@@ -183,7 +183,7 @@ query IndexQuery {markdownRemark(frontmatter: {templateKey: {eq:"front-page"}}) 
     logo
     background
     description
-    description_rows
+    d_rows
     tldr {
       point {
         image

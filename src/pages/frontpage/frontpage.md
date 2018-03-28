@@ -16,7 +16,7 @@ tldr:
         tehostaminen
       image: /img/webbikuvake8.png
 description: fuufaa?
-description_rows:
+d_rows:
   - Löytyykö teidän organisaatiosta tekosyitä miksi kauppaa ei tule?
   - Kuluuko oikeiden asiakkaiden löytämiseen liikaa aikaa?
   - Motivoituvatko myyjänne oikeasti kaikista työvaiheistaan?

@@ -55,7 +55,7 @@ collections:
           - {label: Background, name: background, widget: image}
           - {label: tldr, name: tldr, widget: list, fields: [{label: Point, name: point, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
           - {label: Description, name: description, widget: string}
-          - {label: Description rows, name: description_rows, widget: list, fields: [{label: Description row, name: description_row, widget: string}]}
+          - {label: Description rows, name: d_rows, widget: list, fields: [{label: Description row, name: d_row, widget: string}]}
           - {label: Pallurat Title, name: pallurat_title, widget: string}
           - {label: Pallurat, name: pallurat, widget: list, fields: [{label: Pallura, name: pallura, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
           - {label: People, name: people, widget: list, fields: [{label: Name, name: name, widget: string},{label: title, name: title, widget: string},{label: responsibility, name: responsibility, widget: string},{label: phone, name: phone, widget: string},{label: email, name: email, widget: string}, {label: linkedin, name: linkedin, widget: string},{label: Image, name: image, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
