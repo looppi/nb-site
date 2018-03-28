@@ -15,6 +15,7 @@ tldr:
         Yksi helpoimpia ja toimivimpia keinoja parantaa tulosta on myynnin
         tehostaminen
       image: /img/webbikuvake8.png
+description: fuufaa?
 description_rows:
   - Löytyykö teidän organisaatiosta tekosyitä miksi kauppaa ei tule?
   - Kuluuko oikeiden asiakkaiden löytämiseen liikaa aikaa?
