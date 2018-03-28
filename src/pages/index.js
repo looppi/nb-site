@@ -82,6 +82,10 @@ export default class IndexPage extends React.Component {
       </div>
     ));
 
+    const descriptions = page.frontmatter.description_rows.map((row) =>(
+      <p key={row}>{row}</p>
+    ));
+
     return (
       <div>
         <section className="section hero is-fullheight"
@@ -126,7 +130,7 @@ export default class IndexPage extends React.Component {
         <section className="container description-container">
           <h3 className="title is-h3 has-text-centered pad-top">Myynnin tehostamisen paras kumppani:</h3>
           <h3 className="title is-h3 has-text-centered">Northbound</h3>
-          <div className="column is-10 is-offset-1 has-text-centered">{page.frontmatter.description}</div>
+          <div className="column is-10 is-offset-1 has-text-centered">{descriptions}</div>
         </section>
         <section className="container">
           <div className="pallurat-header">
@@ -178,7 +182,7 @@ query IndexQuery {markdownRemark(frontmatter: {templateKey: {eq:"front-page"}}) 
     title
     logo
     background
-    description
+    description_rows
     tldr {
       point {
         image
