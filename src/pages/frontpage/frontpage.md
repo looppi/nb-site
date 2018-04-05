@@ -16,10 +16,14 @@ tldr:
         tehostaminen
       image: /img/webbikuvake8.png
 description: >-
-  Löytyykö teidän organisaatiosta tekosyitä miksi kauppaa ei tule? Kuluuko oikeiden asiakkaiden löytämiseen liikaa aikaa? Motivoituvatko myyjänne oikeasti kaikista työvaiheistaan?
-  Northbound tarjoaa koko myyntiprosessin alkupään avaimet käteen -palveluna. Ratkaisut tuotetaan aina asiakassegmentit ja -profiilit huomioiden.
-  Pystymme tarjoamaan myyjillesi kalenterin täydeltä tapaamisia ja poistamaan tehtävälistalta koko prospektointivaiheen sekä kylmien asiakkaiden kontaktoinnin.
-  Laita viestiä ja katsotaan, miten myynti voitaisiin tehdä nykyistä tuloksekkaammin!
+  Löytyykö teidän organisaatiosta tekosyitä miksi kauppaa ei tule? Kuluuko
+  oikeiden asiakkaiden löytämiseen liikaa aikaa? Motivoituvatko myyjänne
+  oikeasti kaikista työvaiheistaan? Northbound tarjoaa koko myyntiprosessin
+  alkupään avaimet käteen -palveluna. Ratkaisut tuotetaan aina asiakassegmentit
+  ja -profiilit huomioiden. Pystymme tarjoamaan myyjillesi kalenterin täydeltä
+  tapaamisia ja poistamaan tehtävälistalta koko prospektointivaiheen sekä
+  kylmien asiakkaiden kontaktoinnin. Laita viestiä ja katsotaan, miten myynti
+  voitaisiin tehdä nykyistä tuloksekkaammin!
 pallurat_title: Työskentele tehokkaammin ja saavuta entistä parempia tuloksia!
 pallurat:
   - pallura:
@@ -48,7 +52,7 @@ people:
   - email: ilja.aalto@northbound.fi
     image:
       alt: Ilja Aalto
-      image: /img/webbikuvake1.png
+      image: /img/ilja-nb.png
     linkedin: 'https://www.linkedin.com/in/ilja-aalto/'
     name: Ilja Aalto
     phone: 044 3131101
