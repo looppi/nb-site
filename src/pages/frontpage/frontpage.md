@@ -52,7 +52,7 @@ people:
   - email: ilja.aalto@northbound.fi
     image:
       alt: Ilja Aalto
-      image: /img/ilja-nb.png
+      image: /img/webbikuvake1.png
     linkedin: 'https://www.linkedin.com/in/ilja-aalto/'
     name: Ilja Aalto
     phone: 044 3131101
