@@ -29,14 +29,14 @@ rows:
       Löytyykö teidän organisaatiosta tekosyitä miksi kauppaa ei tule? Kuluuko
       oikeiden asiakkaiden löytämiseen liikaa aikaa? Motivoituvatko myyjänne
       oikeasti kaikista työvaiheistaan?
-  - row: ' '
+  - row: '-'
   - row: >-
       Northbound tarjoaa koko myyntiprosessin alkupään avaimet käteen
       -palveluna. Ratkaisut tuotetaan aina asiakassegmentit ja -profiilit
       huomioiden. Pystymme tarjoamaan myyjillesi kalenterin täydeltä tapaamisia
       ja poistamaan tehtävälistalta koko prospektointivaiheen sekä kylmien
       asiakkaiden kontaktoinnin.
-  - row: ' '
+  - row: '-'
   - row: >-
       Laita viestiä ja katsotaan, miten myynti voitaisiin tehdä nykyistä
       tuloksekkaammin!
