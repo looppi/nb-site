@@ -68,7 +68,7 @@ people:
   - email: ilja.aalto@northbound.fi
     image:
       alt: Ilja Aalto
-      image: /img/webbikuvake1.png
+      image: /img/cutmypic.png
     linkedin: 'https://www.linkedin.com/in/ilja-aalto/'
     name: Ilja Aalto
     phone: 044 3131101
@@ -77,7 +77,7 @@ people:
   - email: jere.kattelus@northbound.fi
     image:
       alt: Jere Kattelus
-      image: /img/webbikuvake1.png
+      image: /img/cutmypic (1).png
     linkedin: 'https://www.linkedin.com/in/jere-kattelus/'
     name: Jere Kattelus
     phone: 050 4353764
