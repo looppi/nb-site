@@ -83,7 +83,7 @@ export default class IndexPage extends React.Component {
     ));
 
     const rows = page.frontmatter.rows.map(({row}) => (
-      <p key={row}>{row}</p>
+      <p key={row} className="space-bottom">{row}</p>
     ));
     return (
       <div>
