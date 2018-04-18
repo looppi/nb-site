@@ -31,8 +31,8 @@ export default ({ data }) => {
   />);
 };
 
-export const aboutPageQuery = graphql`
-  query AboutPage($path: String!) {
+export const cookiePageQuery = graphql`
+  query CookiePage($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

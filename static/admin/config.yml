@@ -23,8 +23,8 @@ collections:
     label: "Pages"
     files:
       - file: "src/pages/cookie/cookie.md"
-        label: "About"
-        name: "about"
+        label: "cookie"
+        name: "cookie"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cookie-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/cookie"}
