@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Northbound',
+    siteUrl: 'https://northbound.fi',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -41,6 +42,17 @@ module.exports = {
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: true,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://northbound.fi',
+        //sitemap: 'https://www.example.com/sitemap.xml',
+        policy: [
+          { userAgent: '*', allow: '/$' },
+          { userAgent: '*', disallow: '/*' },
+        ],
+      }
     },
   ],
 };

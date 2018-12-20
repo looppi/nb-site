@@ -1,9 +1,11 @@
 import React from "react";
 import Script from "react-load-script";
-import graphql from "graphql";
+import { graphql } from 'gatsby';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import CookieConsent from "react-cookie-consent";
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
+
+import Layout from '../layouts/index';
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -86,90 +88,92 @@ export default class IndexPage extends React.Component {
       <p key={row} className="space-bottom">{row}</p>
     ));
     return (
-      <div>
-        <section className="section hero is-fullheight"
-                 style={{backgroundImage: `url(${page.frontmatter.background})`, backgroundSize: "cover"}}>
-          <Script
-            url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-            onLoad={() => this.handleScriptLoad()}/>
-          <div className="hero-body">
-            <div className="container">
-              <div className="columns">
-                <div className="column is-one-third is-empty is-mobile"></div>
-                <div className="column is-one-third is-mobile">
-                  <div className="nb-logo image">
-                    <img
-                      style={{maxHeight: "150px", maxWidth: "600px"}}
-                      src={page.frontmatter.logo}
-                      aria-label="Northbound logo"
-                    />
+      <Layout>
+        <div>
+          <section className="section hero is-fullheight"
+                   style={{backgroundImage: `url(${page.frontmatter.background})`, backgroundSize: "cover"}}>
+            <Script
+              url="https://identity.netlify.com/v1/netlify-identity-widget.js"
+              onLoad={() => this.handleScriptLoad()}/>
+            <div className="hero-body">
+              <div className="container">
+                <div className="columns">
+                  <div className="column is-one-third is-empty is-mobile"></div>
+                  <div className="column is-one-third is-mobile">
+                    <div className="nb-logo image">
+                      <img
+                        style={{maxHeight: "150px", maxWidth: "600px"}}
+                        src={page.frontmatter.logo}
+                        aria-label="Northbound logo"
+                      />
+                    </div>
                   </div>
+                  <div className="column is-one-third is-empty is-mobile"></div>
                 </div>
-                <div className="column is-one-third is-empty is-mobile"></div>
               </div>
             </div>
-          </div>
-          <div className="hero-foot">
-            <div className="read-more container has-text-centered">
-              <AnchorLink href="#read-more">
-                <button className="button is-centered is-primary" href="#read-more">
-                  Lue lisää
-                </button>
-              </AnchorLink>
+            <div className="hero-foot">
+              <div className="read-more container has-text-centered">
+                <AnchorLink href="#read-more">
+                  <button className="button is-centered is-primary" href="#read-more">
+                    Lue lisää
+                  </button>
+                </AnchorLink>
 
-            </div>
-          </div>
-        </section>
-        <section id="read-more" className="container has-addons-centered tldr-container">
-          <h3 className="title is-h3 has-text-centered">Tiesitkö, että...</h3>
-          <div className="columns is-multiline pallurat-container">
-            {points}
-          </div>
-        </section>
-        <section className="container description-container">
-          <h3 className="title is-h3 has-text-centered pad-top">Myynnin tehostamisen paras kumppani:</h3>
-          <h3 className="title is-h3 has-text-centered">Northbound</h3>
-          <div className="column is-10 is-offset-1 has-text-centered">{rows}</div>
-        </section>
-        <section className="container">
-          <div className="pallurat-header">
-            <h3 className="title is-h3 has-text-centered">{page.frontmatter.pallurat_title}</h3>
-          </div>
-          <div className="columns is-multiline pallurat-container">
-           {pallurat}
-         </div>
-        </section>
-        <footer className="footer people-container">
-          <section className="container">
-            <div className="columns is-multiline">
-              {naamat}
+              </div>
             </div>
           </section>
-        </footer>
-        <section className="hero some-box">
-          <div className="hero-body">
-            <div className="container">
-              <div className="is-vcentered">
-                <div className="some-icon-container">
-                  <a className="some-icon" href="https://www.facebook.com/northboundoy/" aria-label="link to facebook"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
-                  <a className="some-icon" href="https://www.instagram.com/northbound.fi/" aria-label="link to instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+          <section id="read-more" className="container has-addons-centered tldr-container">
+            <h3 className="title is-h3 has-text-centered">Tiesitkö, että...</h3>
+            <div className="columns is-multiline pallurat-container">
+              {points}
+            </div>
+          </section>
+          <section className="container description-container">
+            <h3 className="title is-h3 has-text-centered pad-top">Myynnin tehostamisen paras kumppani:</h3>
+            <h3 className="title is-h3 has-text-centered">Northbound</h3>
+            <div className="column is-10 is-offset-1 has-text-centered">{rows}</div>
+          </section>
+          <section className="container">
+            <div className="pallurat-header">
+              <h3 className="title is-h3 has-text-centered">{page.frontmatter.pallurat_title}</h3>
+            </div>
+            <div className="columns is-multiline pallurat-container">
+              {pallurat}
+            </div>
+          </section>
+          <footer className="footer people-container">
+            <section className="container">
+              <div className="columns is-multiline">
+                {naamat}
+              </div>
+            </section>
+          </footer>
+          <section className="hero some-box">
+            <div className="hero-body">
+              <div className="container">
+                <div className="is-vcentered">
+                  <div className="some-icon-container">
+                    <a className="some-icon" href="https://www.facebook.com/northboundoy/" aria-label="link to facebook"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a className="some-icon" href="https://www.instagram.com/northbound.fi/" aria-label="link to instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <CookieConsent
-          location="bottom"
-          buttonText="Ok"
-          cookieName="nb-cookie-accept"
-          style={{ background: "#124044", color: "#FFF" }}
+          </section>
+          <CookieConsent
+            location="bottom"
+            buttonText="Ok"
+            cookieName="nb-cookie-accept"
+            style={{ background: "#124044", color: "#FFF" }}
           >
-          Tämä verkkosivu käyttää evästeitä.{" "}
-          <Link to="/cookie">
-            Lue lisää
-          </Link>
-        </CookieConsent>
-      </div>
+            Tämä verkkosivu käyttää evästeitä.{" "}
+            <Link to="/cookie">
+              Lue lisää
+            </Link>
+          </CookieConsent>
+        </div>
+      </Layout>
     );
   }
 }

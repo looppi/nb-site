@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import Navbar from '../components/Navbar';
+//import Navbar from '../components/Navbar';
 import './all.sass';
 
 const TemplateWrapper = ({ children }) => (
@@ -21,12 +21,12 @@ const TemplateWrapper = ({ children }) => (
       <meta property="twitter:description" content="Northbound ulkoistaa koko myyntiprosessin alkupään avaimet käteen -palveluksi. “Paras tuki, mitä B2B-myyjä on koskaan saanut!”"/>
 
     </Helmet>
-    <div>{children()}</div>
+    <div>{children}</div>
   </div>
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.node,
 };
 
 export default TemplateWrapper;

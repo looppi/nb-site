@@ -3,6 +3,7 @@ templateKey: front-page
 title: Huuhaa
 logo: /img/northbound-white.png
 background: /img/bg.jpg
+path: /
 tldr:
   - point:
       alt: B2B-myyjän työajasta ainoastaan 20-30% menee oleelliseen
