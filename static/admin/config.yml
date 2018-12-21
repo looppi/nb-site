@@ -30,6 +30,14 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/cookie"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/alihankkijat/alihankkijat.md"
+        label: "alihankkijat"
+        name: "alihankkijat"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cookie-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/cookie"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/product/product.md"
         label: "Products Page"
         name: "products"
