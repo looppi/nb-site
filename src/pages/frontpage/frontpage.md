@@ -39,7 +39,7 @@ rows:
   - row: >-
       Laita viestiä ja katsotaan, miten myynti voitaisiin tehdä nykyistä
       tuloksekkaammin!
-pallurat_title: Työskentele tehokkaammin ja saavuta entistä parempia tuloksia!
+'pallurat_title': Työskentele tehokkaammin ja saavuta entistä parempia tuloksia!
 pallurat:
   - pallura:
       alt: >-
@@ -82,5 +82,14 @@ people:
     phone: 050 4353764
     responsibility: Henkilöstö & tuotekehitys
     title: COO
+  - email: simo.pyrhonen@northbound.fi
+    image:
+      alt: Simo Pyrhönen
+      image: /img/nb-simo-256.png
+    title: Sales Manager
+    name: Simo Pyrhönen
+    phone: 040 775 7868
+    responsibility: Myynti
+    linkedin: 'https://www.linkedin.com/in/simo-pyrh%C3%B6nen-04527759/'
 ---
 

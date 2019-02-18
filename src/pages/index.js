@@ -62,7 +62,7 @@ export default class IndexPage extends React.Component {
     ));
 
     const naamat = page.frontmatter.people.map(({name, title, responsibility, email, phone, image, linkedin}) => (
-      <div key={email} className="person-block column is-half">
+      <div key={email} className="person-block column is-one-third">
         <div className="person-image-block">
           <div className="person-image">
             <figure className="image is-128x128">
